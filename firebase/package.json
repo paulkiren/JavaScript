@@ -1,0 +1,18 @@
+{
+  "name": "push-example",
+  "version": "1.0.0",
+  "description": "my expiriments on google firebase apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "fcm"
+  ],
+  "author": "Kiren Paul",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-tools": "^3.17.4",
+    "node-cron": "^1.2.1"
+  }
+}

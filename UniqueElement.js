@@ -3,7 +3,6 @@
 // Output: 2,69
 
 // Please note that the function should be a javascript code
-// let myArray = [10, 1, 10, 3, 10, 1, 1, 2, 3, 3,6];
 function getUniqueElementsFromArray(myArray) {
   let uniqueArray = [];
   myArray.forEach(function(item, index) {
