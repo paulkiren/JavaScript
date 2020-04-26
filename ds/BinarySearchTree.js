@@ -22,18 +22,29 @@ BST.prototype.insert = function (value) {
 }
 
 BST.prototype.contains = function (value) {
-    if(this.value === value) return true;
+    if (this.value === value) return true;
 
-    if(value< this.value) {
-        if(!this.left) return false;
+    if (value < this.value) {
+        if (!this.left) return false;
         else return this.left.contains(value);
     }
     else {
-        if(!this.right) return false;
+        if (!this.right) return false;
         else return this.right.contains(value);
 
     }
+}
 
+BST.prototype.minValue = function () {
+
+    if (!this.left) return this.value;
+    else return this.left.minValue();
+
+}
+
+BST.prototype.maxValue = function () {
+    if (!this.right) return this.value;
+    else return this.right.minValue();
 }
 const bTree = new BST(50);
 bTree.insert(30);
@@ -44,4 +55,4 @@ bTree.insert(20);
 bTree.insert(10);
 
 
-console.log(bTree.contains(10));
+console.log(bTree.minValue(), " <<< MIN ::: MAX >>>", bTree.maxValue());
