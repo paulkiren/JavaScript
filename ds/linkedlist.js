@@ -65,6 +65,8 @@ LinkedList.prototype.indexOf = function (value) {
  return output;
 }
 
+
+// Big O notations
 const LL = new LinkedList();
 LL.addToHead(100);
 LL.addToHead(100);
