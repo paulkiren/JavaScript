@@ -39,7 +39,15 @@ LinkedList.prototype.deleteTail = function () {
     if (this.tail) this.tail.next = null;
     else this.head = null;
     return val;
+}
 
+LinkedList.prototype.search =  function (searchValue) {
+    const currentNode = this.head;
+    while(currentNode) {
+        if(currentNode.value === searchValue) return currentNode.value;
+        currentNode = this.currentNode.next;
+    }
+    
 }
 
 const LL = new LinkedList();
