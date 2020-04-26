@@ -1,0 +1,14 @@
+{
+  "name": "rocket-shop",
+  "version": "0.0.1",
+  "description": "Using Plurasite ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiren Paul",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}

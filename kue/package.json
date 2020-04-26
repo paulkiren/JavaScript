@@ -1,0 +1,20 @@
+{
+  "name": "kue-samples",
+  "version": "0.0.1",
+  "description": "validating kue",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kiren paul",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.3",
+    "grunt": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "kue": "^0.11.6",
+    "nodemon": "^1.17.4"
+  }
+}
