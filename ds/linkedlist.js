@@ -41,23 +41,41 @@ LinkedList.prototype.deleteTail = function () {
     return val;
 }
 
-LinkedList.prototype.search =  function (searchValue) {
-    const currentNode = this.head;
-    while(currentNode) {
-        if(currentNode.value === searchValue) return currentNode.value;
-        currentNode = this.currentNode.next;
+LinkedList.prototype.search = function (searchValue) {
+    let currentNode = this.head;
+    while (currentNode) {
+        if (currentNode.value === searchValue) return currentNode.value;
+        currentNode = currentNode.next;
     }
-    
+
+}
+// Assignment Index Of
+// list 3 40 3 7
+// indexOf(3) >  0, 2
+
+LinkedList.prototype.indexOf = function (value) {
+    let output = [], index = 0, currentNode = this.head;
+    while (currentNode) {
+
+        if (currentNode.value === value)
+            output.push(index);
+        index++;
+        currentNode = currentNode.next;
+    }
+ return output;
 }
 
 const LL = new LinkedList();
 LL.addToHead(100);
+LL.addToHead(100);
 LL.addToHead(200);
 LL.addToHead(300);
+LL.addToHead(400);
 LL.addToTail(80);
 LL.addToTail(60);
 // LL.deleteHead();
-LL.deleteHead();
-LL.deleteTail();
+// LL.deleteHead();
+// LL.deleteTail();
+console.log(LL.indexOf(400));
 
-console.log(LL);
+// console.log(LL);
