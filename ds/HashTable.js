@@ -43,9 +43,36 @@ HashTable.prototype.insert = function (key, value) {
 
 }
 
+HashTable.prototype.get = function (key) {
+    const index = this.hash(key);
+    if (!this.buckets[index]) return null;
+    else {
+        var currentNode = this.buckets[index];
+        while (currentNode) {
+            if (currentNode.key === key) return currentNode.value;
+            currentNode = currentNode.next;
+        }
+        return null;
+    }
+
+}
+
+HashTable.prototype.retrieveAll = function () {
+    let retArray = [];
+    this.buckets.forEach((val) => {
+        let currentNode = val;
+        while (currentNode) {
+            retArray.push(currentNode);
+            currentNode = currentNode.next;
+        }
+    });
+     return retArray;
+}
+
 let HST = new HashTable(30);
 HST.insert('kiren', 'kiren@abc.com');
 HST.insert('Linson', 'alfred@linson.com');
 HST.insert('Paul', 'paul@gmail.com');
+HST.insert('Paul', 'ppallll@gmail.com');
 
-console.log(HST.buckets);
+console.log(HST.retrieveAll());
