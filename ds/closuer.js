@@ -1,5 +1,5 @@
-// closure We can access the variables of outer fn in the inner function.
-// through closure we can create private function implementation in JS
+// Closures We can access the variables of outer fn in the inner function.
+// through Closures we can create private function implementation in JS
 // Example below;
 const counter = function () {
     var privateCounter =0;
