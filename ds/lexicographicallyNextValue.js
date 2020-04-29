@@ -1,4 +1,4 @@
-// To continue the application process, please write the below program in a language of your choice.
+// Please write the below program in a language of your choice.
 
 // Implement next permutation, which rearranges numbers o the 
 //lexicographically next greater permutation of numbers. 
@@ -43,7 +43,7 @@ function getLexicographicallyNextValue(arr) {
 
 }
 
-
+//  test
 
 console.log(getLexicographicallyNextValue([1, 2, 3])); // 1,3,2
 console.log(getLexicographicallyNextValue([3, 2, 1])); // 1,2,3
