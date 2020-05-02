@@ -20,13 +20,14 @@ function getFibonacciNumberUpto(num) {
     return FibArray;
 }
 
+
+
 console.log(getFibonacciNumberUpto(100));
 
 
 // BigO O(n2)
 
 function fibonacci(position) {
-    let a = 0, b = 1;
     if (position < 3)
         return 1;
     else return fibonacci(position - 1) + fibonacci(position - 2)
@@ -41,7 +42,9 @@ function fibonacciMem(index, cache) {
     cache = cache || [];
     if (cache[index]) return cache[index];
     else {
-        if (index < 3) return 1;
+        if (index < 3) {
+             return 1;
+        }
         else {
             cache[index] = fibonacciMem(index - 1, cache) + fibonacciMem(index - 2, cache);
         }
@@ -49,4 +52,4 @@ function fibonacciMem(index, cache) {
     return cache[index];
 
 }
-console.log(fibonacciMem(100));
+console.log(fibonacciMem(10));
