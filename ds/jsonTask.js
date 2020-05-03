@@ -9,7 +9,7 @@ const myJsonObj = {
     myNumber: 9999,
     myNull: null,
     myBoolean: false,
-    myUndefined: undefined,
+    // myUndefined: undefined,
     myArray: [1, 2, 3, '88'],
     myObject: { "t": "myval" }
 };
