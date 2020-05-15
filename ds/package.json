@@ -1,0 +1,14 @@
+{
+  "name": "ds",
+  "version": "1.0.0",
+  "description": "For the javascript testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Kiren Paul",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^7.1.2"
+  }
+}
