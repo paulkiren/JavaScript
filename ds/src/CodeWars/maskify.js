@@ -20,7 +20,7 @@ maskify("Nananananananananananananananana Batman!") == "########################
 
 // return masked string
 function maskify(cc) {
-    console.log(cc.length, Array(cc.length).fill('#').join(''));
+    // console.log( cc.replace(/.(?=.....)/g, '#'));
     if (cc.length < 5) return cc;
     else return (Array(cc.length - 3).join('#') + cc.slice(cc.length - 4));
 
