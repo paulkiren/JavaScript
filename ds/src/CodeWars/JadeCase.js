@@ -35,3 +35,17 @@ String.prototype.toJadenCase = function () {
 var str = "How can mirrors be real if our eyes aren't real";
 console.log(str.toJadenCase());
 // Test.assertEquals(str.toJadenCase(), "How Can Mirrors Be Real If Our Eyes Aren't Real");
+
+
+// Slight modification 
+
+String.prototype.toReverseJadenCase = function () {
+    const capitlizeWord = (str) => {
+        let ab = str.toUpperCase().split('');
+        ab[0] = ab[0].toLowerCase();
+        return ab.join('');
+    }
+    return this.split(' ').map((s) => { return capitlizeWord(s) }).join(' ');
+};
+
+console.log(str.toReverseJadenCase());
