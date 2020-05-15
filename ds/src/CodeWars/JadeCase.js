@@ -48,4 +48,15 @@ String.prototype.toReverseJadenCase = function () {
     return this.split(' ').map((s) => { return capitlizeWord(s) }).join(' ');
 };
 
+String.prototype.toCamelCase = function () {
+    const capitlizeWord = (str, index) => {
+        if (index === 0) return str.toLowerCase()
+        let ab = str.toLowerCase().split('');
+        ab[0] = ab[0].toUpperCase();
+        return ab.join('');
+    }
+    return this.split(' ').map((s, index) => { return capitlizeWord(s, index) }).join('');
+};
+
 console.log(str.toReverseJadenCase());
+console.log(str.toCamelCase());
