@@ -77,6 +77,7 @@ function sumLinkedList(l1, l2) {
 };
 
 // https://www.geeksforgeeks.org/implementation-linkedlist-javascript/
+//https://stackoverflow.com/questions/53965663/adding-two-numbers-in-the-form-of-a-linked-list
   // NOTE:
   // - Input will always two non-empty linked lists representing two non-negative integers.
   // - The digits are stored in reverse order and each of their nodes contain a single digit.
