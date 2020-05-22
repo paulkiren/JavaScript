@@ -19,22 +19,25 @@ encryptThis("hello world") === "104olle 119drlo" */
 
 var encryptThis = function (text) {
     // Implement me! :)
-    const swap = w => {
-        console.log(w);
-        if (w.length > 1) {
-            let z =  w[1];
-            w[1]=w[w.length - 1];
-            console.log(w);
-            w[w.length - 1] = z;
+    // const swap = w => {
+    //     let ab = w.split('');
+    //     ab[0]= ab[0].charCodeAt(0);
+    //     let z = ab[1];
+    //     ab[1] = ab[ab.length - 1];
+    //     console.log(ab);
+    //     ab[ab.length - 1] = z;
+    //     return ab.join('');
+    // }
+    // return text.split(' ').map(a => {
+    //     let chars = a.charCodeAt(0);
+    //     return  swap(a);
+    // }).join(' ');
 
-            console.log(z);
-            return w;
-        }
-    }
-    return text.split(' ').map(a => {
-        let chars =a.charCodeAt(0);
-        return  chars+  swap(a);
-    }).join(' ');
+    return text.replace(/\b\w(\w?)(\w*?)(\w?)\b/g, (word, a, mid, b) => 
+word.charCodeAt(0) + b + mid + a);
+}
+console.prototype.klog= function() {
+    
 }
 
 console.log(encryptThis("Hello"));
