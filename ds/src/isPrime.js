@@ -1,5 +1,5 @@
 
-
+// May 26 2020 Kyklo interview question Print prime numbers between 1-100
 function getPrimeNumbersBetween(limit) {
     let primeNumbers = [];
     let counter = 0
