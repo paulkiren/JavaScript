@@ -12,8 +12,8 @@
   "author": "Kiren Paul",
   "license": "MIT",
   "dependencies": {
-    "firebase-tools": "^3.17.4",
-    "mocha": "^5.0.5",
+    "firebase-tools": "^8.3.0",
+    "mocha": "^7.1.2",
     "node-cron": "^1.2.1"
   }
 }
