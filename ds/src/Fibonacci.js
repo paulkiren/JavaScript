@@ -33,7 +33,7 @@ function fibonacci(position) {
     else return fibonacci(position - 1) + fibonacci(position - 2)
 
 }
-console.log(fibonacci(10));
+console.log(fibonacci(45));
 
 
 // Big O O(n)
@@ -52,4 +52,4 @@ function fibonacciMem(index, cache) {
     return cache[index];
 
 }
-console.log(fibonacciMem(10));
+console.log(fibonacciMem(50));

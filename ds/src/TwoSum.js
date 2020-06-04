@@ -30,6 +30,6 @@ function twoSum(numArray, sum) {
     return sumArrau;
 }
 
-console.log(twoSum([1, 2, 3, 4, 5, 0], 7));
+console.log(twoSum([5,2, 1, 2, 2, 3, 4, 5, 5,], 7));
 
 // output [ [ 4, 3 ], [ 5, 2 ] ]
