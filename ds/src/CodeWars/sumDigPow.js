@@ -9,6 +9,22 @@ function sumDigPow(a, b) {
     }
     return ResultArray;
 }
-console.log( sumDigPow(1,100));
+// console.log( sumDigPow(1,100));
 
 // https://www.codewars.com/kata/5626b561280a42ecc50000d1
+
+function towerBuilder(nFloors) {
+    // build here
+      const getStar=(num)=>{
+    let testArray =  new Array(num).fill('*');
+    console.log(testArray);
+    return testArray.join('');
+
+      }
+      let resultArray = new Array(nFloors);
+     resultArray= resultArray.map((a,index)=>getStar(index));
+      console.log(resultArray);
+    return resultArray;
+  }
+
+  console.log(towerBuilder(4));
