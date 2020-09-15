@@ -13,6 +13,7 @@ String.prototype.toJadenCase = function () {
     const capitlizeWord = (str) => {
         let ab = str.split('');
         ab[0] = ab[0].toUpperCase();
+        console.loh("My Love", ab);
         return ab.join('');
     }
     return this.split(' ').map((s) => { return capitlizeWord(s) }).join(' ');
